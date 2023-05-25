@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>DATA CAR</h1>
+	{% for car_data in data_cars %}
+		<p>
+			Stamp - {{ car_data.stamp }}<br>
+			Release - {{ car_data.release }}<br>
+			Color - {{ car_data.color }}<br>
+			Mileage - {{ car_data.mileage }}<br>
+			Price - {{ car_data.price }}<br><br>
+		</p>
+	{% endfor %}
+</body>
+</html>
